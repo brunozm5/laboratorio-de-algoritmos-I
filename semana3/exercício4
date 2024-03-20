@@ -1,0 +1,5 @@
+print("Gasolina")
+pag = int(input("Quanto foi pago na gasolina?"))
+lit = int(input("Qual o preço do litro?"))
+print("Litros de gasolina:")
+print(pag / lit)
