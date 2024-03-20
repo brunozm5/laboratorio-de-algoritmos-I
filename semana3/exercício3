@@ -1,0 +1,6 @@
+print("Descubra se você pode votar")
+ano = int(input("Que ano você nasceu:"))
+if ano <= 2006:
+    print("Você PODE votar!")
+if ano >= 2007:
+    print("Você NÃO PODE votar!")
