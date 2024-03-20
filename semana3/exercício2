@@ -1,0 +1,9 @@
+print("Dois números")
+um = int(input("Escolha o primeiro número:"))
+dois = int(input("Escolha o segundo número:"))
+if um > dois:
+    print(um)
+    print(dois)
+if dois > um:
+    print(dois)
+    print(um)
