@@ -1,0 +1,8 @@
+print("Salário")
+qtd = int(input("Quantidade de horas trabalhadas por mês:"))
+salario = qtd * 35
+print("Salário:")
+print(salario)
+if salario <= 1000:
+    print("Recebido aumento:")
+    print(salario + 300)
