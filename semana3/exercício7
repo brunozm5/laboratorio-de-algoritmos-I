@@ -1,0 +1,9 @@
+print("Qual é o seu peso ideal")
+altura = int(input("Qual sua altura em CM?"))
+sexo = int(input("Qual seu sexo 1M 2F?"))
+if sexo == 1:
+    print("Seu peso ideal é:")
+    print((altura / 100 * 72.7) - 58)
+if sexo == 2:
+    print("Seu peso ideal é:")
+    print((altura / 100 * 62.1) - 44.7)
