@@ -1,0 +1,22 @@
+n1 = float(input("Digite o primeiro elemento: "))
+operador = input("Digite o primeiro operador (+ - * /): ")
+n2 = float(input("Digite o segundo elemento: "))
+
+if operador == "+":
+    resultado = n1 + n2
+    print("Resultado da soma: ", resultado)
+
+elif operador == "-":
+    resultado = n1 - n2
+    print("Resultado da subtração: ", resultado)
+
+elif operador == "*":
+    resultado = n1 * n2
+    print("Resultado da multiplicação: ", resultado)
+
+elif operador == "/":
+    resultado = n1 + n2
+    print("Resultado da divisão: ", resultado)
+
+else:
+    print("Operação inválida")
