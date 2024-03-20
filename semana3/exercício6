@@ -1,0 +1,6 @@
+print("Número positivo ou negativo")
+num = int(input("Digite um número:"))
+if num < 0:
+    print("Este número é inválido")
+if num >= 0:
+    print(num * 2)
