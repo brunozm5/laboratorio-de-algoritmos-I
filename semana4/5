@@ -1,0 +1,12 @@
+print("Veículos")
+car = str(input("Qual o seu tipo de carteira?"))
+if car == "A":
+    print("Você pode dirigir motos e triciclos")
+if car == "B":
+    print("Você pode dirigir carros de passeio")
+if car == "C":
+    print("Você pode dirigir veículos de carga acima de 3,5 ton.")
+if car == "D":
+    print("Você pode dirigir veículos com mais de 8 passageiros")
+if car == "E":
+    print("Você pode dirigir veículos com unidade acoplada acima de 6 ton.")
