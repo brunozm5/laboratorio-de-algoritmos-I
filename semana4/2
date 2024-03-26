@@ -1,0 +1,11 @@
+print("Loja de Roupas")
+valor = int(input("Qual o valor do produto?"))
+numPar = int(input("Em quantas vezes deseja parcelar?"))
+if numPar == 1:
+    print("O produto irá custar", valor, "reais")
+if numPar == 2:
+    print("O produto irá custar", valor / 2, "reais")
+if numPar == 3:
+    print("O produto irá custar", valor / 3, "reais")
+else: 
+    print("Não é possível realizar a parcela.")
