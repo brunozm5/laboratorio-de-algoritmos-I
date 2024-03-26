@@ -1,0 +1,10 @@
+print("Certo ou errado")
+valor = str(input("Qual é a resposta certa?"))
+if valor == 'A':
+    print("Resposta errada")
+if valor == 'B':
+    print("Resposta certa")
+if valor == 'C':
+    print("Resposta errada")
+if valor == 'D':
+    print("Resposta errada")
