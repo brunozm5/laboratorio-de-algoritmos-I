@@ -1,0 +1,3 @@
+print("Cavalos")
+cav = int(input("Qual o número de cavalos?"))
+print("O valor total será", cav * 320, "reais")
