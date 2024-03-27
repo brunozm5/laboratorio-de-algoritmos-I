@@ -1,0 +1,4 @@
+print("Número")
+num = int(input("Qual seria o número?"))
+print("O dobro deste número é ", num * 2)
+print("A metade deste número é ", num * 0.5)
