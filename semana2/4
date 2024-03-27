@@ -1,0 +1,3 @@
+print("Pneus")
+carros = int(input("Quantos carros? "))
+print("Você gastará", carros * 1581.60, "reais para trocar os pneus dos seus carros.")
