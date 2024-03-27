@@ -1,0 +1,3 @@
+print("Loja")
+reais = int(input("Qual o valor de fábrica?"))
+print("O valor de venda é ", reais * 1.3, "reais.")
