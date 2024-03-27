@@ -1,0 +1,3 @@
+print("Idade")
+anoNasc = int(input("Em que ano você nasceu? "))
+print("Você tem, ou irá fazer", 2024 - anoNasc, "anos.")
