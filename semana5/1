@@ -1,0 +1,10 @@
+print("Aumento")
+nome = str(input("Qual o nome do funcionário? "))
+anos = int(input("Quantos anos o funcionário tem de serviço? "))
+sal = int(input("Qual o salário do funcionário atualmente? "))
+if anos >= 5 and sal <= 2000:
+    print(nome, "receberá um aumento de 10%.")
+if anos >= 5 and sal > 2000:
+    print(nome, "receberá um aumento de 5%.")
+if anos < 5:
+    print(nome, "não receberá um aumento.")
