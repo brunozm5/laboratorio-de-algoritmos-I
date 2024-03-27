@@ -5,3 +5,11 @@ elif idade > 16 and idade > 70:
     print("Voto é facultativo")
 else:
     print("Não pode votar")
+
+
+letra = (input("Digite a sua letra "))
+if letra == "a" or letra == "e" or letra == "i" or letra == "o" or letra == "u":
+    print("VOGAL")
+else:
+    print("CONSOANTE")
+
