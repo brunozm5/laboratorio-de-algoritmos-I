@@ -1,0 +1,42 @@
+contador = 0
+somaNotas = 0
+
+while contador < 5:
+    nota = float(input("Digite uma nota: "))
+    somaNotas = somaNotas + nota
+    contador += 1
+    print(contador, nota, somaNotas)
+
+media = somaNotas / 5
+print("Média das notas:", media)
+
+
+
+
+
+
+saldo = float(input("Digite o saldo inicial: "))
+opçao = 0
+
+while opçao != 4:
+    print("1 - Realizar venda")
+    print("2 - Retirar dinheiro")
+    print("3 - Ver dinheiro em caixa")
+    print("4 - Sair")
+    opçao = int(input("Digite a opção desejada: "))
+
+    if opçao == 1:
+        valorvenda = float(input("Digite o valor da venda"))
+        saldo += valorvenda
+        print("Saldo atual após a venda: ", saldo)
+    elif opçao == 2:
+        retirada = float(input("Digite o valor da retirada: "))
+        if retirada <= saldo:
+            saldo = saldo - retirada
+            print("Saldo atual após a retirada:", saldo)
+
+
+
+
+
+ 
