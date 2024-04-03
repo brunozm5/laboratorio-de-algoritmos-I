@@ -1,0 +1,34 @@
+somaalturas = 0
+somaidade = 0
+qtdpessoas = 0
+opçao = 0
+
+while opçao != 3:
+    print("1 - Cadastrar pessoas")
+    print("2 - Mostrar média parcial")
+    print("3 - Sair")
+    opçao = int(input("DIGITE UMA OPÇÃO: "))
+
+    if opçao == 1:
+        idade = int(input("Informe sua idade:"))
+        altura = float(input("Informe sua altura: "))
+        somaalturas += altura
+        somaidade += idade
+        qtdpessoas += 1
+        print(somaalturas, somaidade, qtdpessoas)
+    elif opçao == 2:
+        if qtdpessoas == 0:
+            print("Nenhuma pessoa cadastrada")
+        else:
+            mediaaltura = somaalturas / qtdpessoas
+            mediaidade = somaidade / qtdpessoas
+            print("Média parcial de alturas: ", mediaaltura)
+            print("Média parcial de idades: ", mediaidade)
+    elif opçao == 3:
+        if qtdpessoas == 0:
+            print("Nenhuma pessoa cadastrada")
+        else:
+            mediaaltura = somaalturas / qtdpessoas
+            mediaidade = somaidade / qtdpessoas
+            print("Média final de alturas: ", mediaaltura)
+            print("Média final de idades: ", mediaidade)
