@@ -1,0 +1,11 @@
+num = int(input("Qual o número?"))
+adv = int(input("Digite o número que você acha que é de 1-100"))
+while adv != num:
+    if adv < num:
+        print("Tente um número maior")
+        adv = int(input("Digite o número que você acha que é de 1-100"))
+    if adv > num:
+        print("Tente um número menor")
+        adv = int(input("Digite o número que você acha que é de 1-100"))
+if adv == num:
+    print("Parabéns")
