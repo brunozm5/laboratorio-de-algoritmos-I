@@ -1,0 +1,7 @@
+N = int(input( ))
+num = 0
+soma = 0
+while num < N:
+    num += 1
+    soma += num
+print(soma)
