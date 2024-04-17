@@ -1,0 +1,14 @@
+nota1 = int(input(print("Nota da 1a prova?")))
+nota2 = int(input(print("Nota da 2a prova?")))
+nota3 = int(input(print("Nota da 3a prova?")))
+media = (nota1 + nota2 + nota3) / 3
+if media > 9:
+ print("Conceito A")
+if 7 <= media <= 9:
+ print("Conceito B")
+if 5 <= media < 7:
+ print("Conceito C")
+if 3 <= media < 5:
+ print("Conceito D")
+if media < 3:
+ print("Conceito E")
