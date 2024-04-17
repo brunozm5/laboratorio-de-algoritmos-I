@@ -1,0 +1,9 @@
+import datetime
+from datetime import date
+dia = int(input('dia do nascimento\n'))
+mes = int(input('mes do nascimento\n'))
+ano = int(input('ano do nascimento\n'))
+Nascimento = datetime.date(ano, mes, dia)
+Idade = (date.today() - Nascimento)
+result =(Idade.days / 365.25)
+print(f'Você tem {result} anos')
