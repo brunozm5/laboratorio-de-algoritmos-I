@@ -1,0 +1,9 @@
+A = int(input(print("Qual o 1o número?")))
+B = int(input(print("Qual o 2o número?")))
+C = int(input(print("Qual o 3o número?")))
+if A > B and A > C:
+ print(A, "é o maior número")
+if B > A and B > C:
+ print(B, "é o maior número")
+if C > A and C > B:
+ print(C, "é o maior número")
