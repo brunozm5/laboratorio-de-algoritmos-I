@@ -1,0 +1,9 @@
+sal = int(input(print("Qual salário")))
+if sal <= 1903.98:
+ print("Seu salário é", sal)
+if 1903.98 > sal > 2826.66:
+ print("Seu salário é", sal / 100 * 92.5)
+if 2826.65 > sal > 3751.06:
+ print("Seu salário é", sal / 100 * 85)
+if sal > 3751.05:
+ print("Seu salário é", sal / 100 * 78.5)
