@@ -1,0 +1,13 @@
+saldo = int(input(print("Qual o saldo atual?")))
+menu = int(input(print("O que deseja fazer?")))
+if menu == 1:
+    saque = int(input(print("Quanto?")))
+    if saque > saldo:
+        print("Erro")
+    else:
+        print("Seu saldo agora é R$", saldo - saque)
+if menu == 2:
+    dep = int(input(print("Quanto?")))
+    print("Seu novo saldo é R$", saldo + dep)
+if menu == 3:
+    print("Seu saldo atual é de R$", saldo)
