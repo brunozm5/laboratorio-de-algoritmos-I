@@ -1,0 +1,25 @@
+for contador in range(0,10):
+    print(contador)
+
+for contador in range(0,10,4):
+    print(contador)
+
+for contador in range(10,0,-1):
+    print(contador)
+
+inicio = int(input("Digite 1° num"))
+fim = int(input("Digite 2° num"))
+for contador in range(inicio,fim+1):
+    print(contador)
+
+
+
+
+inicio = int(input("1°"))
+fim = int(input("2°"))
+soma = 0
+
+for valor in range(inicio+1,fim):
+    soma = soma + valor
+
+media = soma / (fim - inicio - 1)
