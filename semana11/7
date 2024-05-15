@@ -1,0 +1,8 @@
+n1 = int(input("1° número:"))
+n2 = int(input("2° número:"))
+if n1 % 2 == 0:
+    for valor in range(n1,n2+1,2):
+        print(valor)
+else:
+    for valor in range(n1+1,n2+1,2):
+        print(valor)
