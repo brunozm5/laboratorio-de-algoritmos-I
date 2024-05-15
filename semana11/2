@@ -1,0 +1,11 @@
+n1 = int(input("1°"))
+n2 = int(input("2°"))
+soma = 0
+if n2 - 10 == n1:
+    for media in range(n1,n2+1):
+        soma = soma + media
+        med = soma / 10
+    print(med)
+else:
+    print("Erro!")
+
