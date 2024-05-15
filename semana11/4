@@ -1,8 +1,23 @@
 n1 = int(input("1°"))
 n2 = int(input("2°"))
 soma = 0
-if n2 - 10 = n1:
-  for media in range(n1,n2+1):
+par = 0
+impar = 0
+zeros = 0
+if n2 - 10 == n1:
+    for num in range(n1,n2+1):
+        if num % 2 == 0:
+            par += 1
+        if num % 2 != 0:
+            impar += 1
+        if num / 10 == 0:
+            if 9 < num < 99:
+                zeros += 1
+            if 99 < num < 999:
+                zeros += 2
+            if 999 < num < 9999:
+                zeros += 3
+print ("Pares:", par, ", ímpares:", impar, ", zeros:", zeros)
   
 
 
