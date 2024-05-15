@@ -17,7 +17,9 @@ if n2 - 10 == n1:
                 zeros += 2
             if 999 < num < 9999:
                 zeros += 3
-print ("Pares:", par, ", ímpares:", impar, ", zeros:", zeros)
+    print("Pares:", par, ", ímpares:", impar, ", zeros:", zeros)
+else:
+    print("Erro!")
   
 
 
