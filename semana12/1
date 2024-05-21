@@ -1,0 +1,24 @@
+valores = []
+soma = 0
+for i in range(0,8):
+    valor = (int(input("Quais são os valores?")))
+    valores.append(valor)
+    print(soma)
+    
+if valores[0] > 30:
+    soma += valores[0]
+if valores[1] > 30:
+    soma += valores[1]
+if valores[2] > 30:
+    soma += valores[2]
+if valores[3] > 30:
+    soma += valores[3]
+if valores[4] > 30:
+    soma += valores[4]
+if valores[5] > 30:
+    soma += valores[5]
+if valores[6] > 30:
+    soma += valores[6]
+if valores[7] > 30:
+    soma += valores[7]
+print(soma)    
