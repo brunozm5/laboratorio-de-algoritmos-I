@@ -1,0 +1,50 @@
+maior_idade = 0
+cont_feminino_verde_loiro = 0
+cont_olhos_azuis = cont_olhos_verdes = cont_olhos_castanhos = 0
+cont_cabelos_loiros = cont_cabelos_castanhos = cont_cabelos_pretos = 0
+cont_masculino = cont_feminino = 0
+
+for _ in range(15):
+    sexo = input("Informe o sexo (M/F): ").upper()
+    olhos = input("Informe a cor dos olhos (A/V/C): ").upper()
+    cabelos = input("Informe a cor dos cabelos (L/C/P): ").upper()
+    idade = int(input("Informe a idade: "))
+    if idade > maior_idade:
+        maior_idade = idade
+    if sexo == 'F' and 18 <= idade <= 35 and olhos == 'V' and cabelos == 'L':
+        cont_feminino_verde_loiro += 1
+    if olhos == 'A':
+        cont_olhos_azuis += 1
+    elif olhos == 'V':
+        cont_olhos_verdes += 1
+    elif olhos == 'C':
+        cont_olhos_castanhos += 1
+    if cabelos == 'L':
+        cont_cabelos_loiros += 1
+    elif cabelos == 'C':
+        cont_cabelos_castanhos += 1
+    elif cabelos == 'P':
+        cont_cabelos_pretos += 1
+    if sexo == 'M':
+        cont_masculino += 1
+    elif sexo == 'F':
+        cont_feminino += 1
+porcentagem_olhos_azuis = (cont_olhos_azuis / 15) * 100
+porcentagem_olhos_verdes = (cont_olhos_verdes / 15) * 100
+porcentagem_olhos_castanhos = (cont_olhos_castanhos / 15) * 100
+porcentagem_cabelos_loiros = (cont_cabelos_loiros / 15) * 100
+porcentagem_cabelos_castanhos = (cont_cabelos_castanhos / 15) * 100
+porcentagem_cabelos_pretos = (cont_cabelos_pretos / 15) * 100
+porcentagem_masculino = (cont_masculino / 15) * 100
+porcentagem_feminino = (cont_feminino / 15) * 100
+
+print("Maior idade do grupo:", maior_idade)
+print("Quantidade de mulheres entre 18 e 35 anos, olhos verdes e cabelos louros:", cont_feminino_verde_loiro)
+print("Porcentagem de pessoas com olhos azuis:", porcentagem_olhos_azuis)
+print("Porcentagem de pessoas com olhos verdes:", porcentagem_olhos_verdes)
+print("Porcentagem de pessoas com olhos castanhos:", porcentagem_olhos_castanhos)
+print("Porcentagem de pessoas com cabelos loiros:", porcentagem_cabelos_loiros)
+print("Porcentagem de pessoas com cabelos castanhos:", porcentagem_cabelos_castanhos)
+print("Porcentagem de pessoas com cabelos pretos:", porcentagem_cabelos_pretos)
+print("Porcentagem de pessoas do sexo masculino:", porcentagem_masculino)
+print("Porcentagem de pessoas do sexo feminino:", porcentagem_feminino)
