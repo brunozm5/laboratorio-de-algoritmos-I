@@ -1,0 +1,23 @@
+contagem_jornal_A = 0
+contagem_jornal_B = 0
+contagem_jornal_C = 0
+
+for _ in range(20):
+    opniao = input("Qual jornal é mais lido em Santa Maria? (A, B ou C): ").upper()
+    if opniao == 'A':
+        contagem_jornal_A += 1
+    elif opniao == 'B':
+        contagem_jornal_B += 1
+    elif opniao == 'C':
+        contagem_jornal_C += 1
+
+total_votos = contagem_jornal_A + contagem_jornal_B + contagem_jornal_C
+porcentagem_jornal_A = (contagem_jornal_A / total_votos) * 100
+porcentagem_jornal_B = (contagem_jornal_B / total_votos) * 100
+porcentagem_jornal_C = (contagem_jornal_C / total_votos) * 100
+
+porcentagens_ordem_crescente = sorted([(porcentagem_jornal_A, 'A'), (porcentagem_jornal_B, 'B'), (porcentagem_jornal_C, 'C')])
+
+print("Porcentagem de cada jornal em ordem crescente:")
+for porcentagem, jornal in porcentagens_ordem_crescente:
+    print(f"Jornal {jornal}: {porcentagem:.2f}%")
