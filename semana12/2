@@ -1,0 +1,37 @@
+valores = []
+quantos = 0
+for i in range(0,10):
+    valor = (int(input("Quais são os valores?")))
+    valores.append(valor)
+    
+if valores[0] > 100:
+    print("O 1° valor,", valores[0], "é maior que 100.")
+    quantos += 1
+if valores[1] > 100:
+    print("O 2° valor,", valores[1], "é maior que 100.")
+    quantos += 1
+if valores[2] > 100:
+    print("O 3° valor,", valores[2], "é maior que 100.")
+    quantos += 1
+if valores[3] > 100:
+    print("O 4° valor,", valores[3], "é maior que 100.")
+    quantos += 1
+if valores[4] > 100:
+    print("O 5° valor,", valores[4], "é maior que 100.")
+    quantos += 1
+if valores[5] > 100:
+    print("O 6° valor,", valores[6], "é maior que 100.")
+    quantos += 1
+if valores[6] > 100:
+    print("O 7° valor,", valores[6], "é maior que 100.")
+    quantos += 1
+if valores[7] > 100:
+    print("O 8° valor,", valores[7], "é maior que 100.")
+    quantos += 1
+if valores[8] > 100:
+    print("O 9° valor,", valores[8], "é maior que 100.")
+    quantos += 1
+if valores[9] > 100:
+    print("O 10° valor,", valores[9], "é maior que 100.")
+    quantos += 1
+print(quantos, "valores são maiores que 100")
