@@ -1,0 +1,12 @@
+B = []
+A = []
+q = 9
+for i in range(0,10):
+    V = int(input("?"))
+    A.append(V)
+for i in range(0,10):
+    B.append(A[q])
+    q -= 1
+
+print(A)
+print(B)
