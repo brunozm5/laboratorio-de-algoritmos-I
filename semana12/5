@@ -1,0 +1,14 @@
+item = []
+itens = int(input("Qual opção?"))
+while itens != 5:
+    if itens == 1:
+        inserir = int(input("Insira um item"))
+        item.append(inserir)
+    elif itens == 2:
+        retirar = int(input("Qual deseja retirar"))
+        item.remove(retirar)
+    elif itens == 3:
+        print(item)
+    elif itens == 4:
+        item = []
+    itens = int(input("Qual opção?"))
