@@ -1,0 +1,315 @@
+1.
+for i in range(10, 0, -1):
+    print(i)
+
+
+2.
+num = []
+nums = int(input("Digite uma num"))
+num.append(nums)
+nums = int(input("Digite uma num"))
+num.append(nums)
+nums = int(input("Digite uma num"))
+num.append(nums)
+nums = int(input("Digite uma num"))
+num.append(nums)
+nums = int(input("Digite uma num"))
+num.append(nums)
+for i in range(4, -1, -1):
+    print(num[i])
+
+
+3.
+num = []
+nums = int(input("Digite uma num"))
+num.append(nums)
+nums = int(input("Digite uma num"))
+num.append(nums)
+nums = int(input("Digite uma num"))
+num.append(nums)
+nums = int(input("Digite uma num"))
+num.append(nums)
+nums = int(input("Digite uma num"))
+num.append(nums)
+print((num[0] + num[1] + num[2] + num[3] + num[4]) / 5)
+
+
+4.
+num = []
+nums = int(input("Digite um número"))
+num.append(nums)
+nums = int(input("Digite um número"))
+num.append(nums)
+nums = int(input("Digite um número"))
+num.append(nums)
+nums = int(input("Digite um número"))
+num.append(nums)
+nums = int(input("Digite um número"))
+num.append(nums)
+if num[0] > num[1] and num[0] > num[2] and num[0] > num[3] and num[0] > num[4]:
+    print("Maior número é o 1°", num[0])
+if num[1] > num[0] and num[1] > num[2] and num[1] > num[3] and num[1] > num[4]:
+    print("Maior número é o 2°", num[1])
+if num[2] > num[1] and num[2] > num[0] and num[2] > num[3] and num[2] > num[4]:
+    print("Maior número é o 3°", num[2])
+if num[3] > num[0] and num[3] > num[1] and num[3] > num[2] and num[3] > num[4]:
+    print("Maior número é o 4°", num[3])
+if num[4] > num[0] and num[4] > num[1] and num[4] > num[2] and num[4] > num[3]:
+    print("Maior número é o 5°", num[4])
+if num[0] < num[1] and num[0] < num[2] and num[0] < num[3] and num[0] < num[4]:
+    print("Menor número é o 1°", num[0])
+if num[1] < num[0] and num[1] < num[2] and num[1] < num[3] and num[1] < num[4]:
+    print("Menor número é o 2°", num[1])
+if num[2] < num[1] and num[2] < num[0] and num[2] < num[3] and num[2] < num[4]:
+    print("Menor número é o 3°", num[2])
+if num[3] < num[0] and num[3] < num[1] and num[3] < num[2] and num[3] < num[4]:
+    print("Menor número é o 4°", num[3])
+if num[4] < num[0] and num[4] < num[1] and num[4] < num[2] and num[4] < num[3]:
+    print("Menor número é o 5°", num[4])
+
+
+5.
+num = []
+nums = int(input("Digite uma num"))
+num.append(nums)
+nums = int(input("Digite uma num"))
+num.append(nums)
+nums = int(input("Digite uma num"))
+num.append(nums)
+num1 = []
+nums1 = int(input("Digite uma num"))
+num1.append(nums1)
+nums1 = int(input("Digite uma num"))
+num1.append(nums1)
+nums1 = int(input("Digite uma num"))
+num1.append(nums1)
+soma = []
+somas = num[0] + num1[0]
+soma.append(somas)
+somas = num[1] + num1[1]
+soma.append(somas)
+somas = num[2] + num1[2]
+soma.append(somas)
+print(soma)
+
+
+6.
+num = []
+nums = int(input("Digite um num"))
+num.append(nums)
+nums = int(input("Digite um num"))
+num.append(nums)
+nums = int(input("Digite um num"))
+num.append(nums)
+nums = int(input("Digite um num"))
+num.append(nums)
+nums = int(input("Digite um num"))
+num.append(nums)
+nums = int(input("Digite um num"))
+num.append(nums)
+const = int(input("Por qual valor serão multiplicados?"))
+print((num[0] * const), (num[1] * const), (num[2] * const), (num[3] * const), (num[4] * const), (num[5] * const))
+
+
+7.
+num = []
+from random import randrange
+nums = randrange(0,101)
+num.append(nums)
+nums = randrange(0,101)
+num.append(nums)
+nums = randrange(0,101)
+num.append(nums)
+nums = randrange(0,101)
+num.append(nums)
+nums = randrange(0,101)
+num.append(nums)
+nums = randrange(0,101)
+num.append(nums)
+nums = randrange(0,101)
+num.append(nums)
+nums = randrange(0,101)
+num.append(nums)
+nums = randrange(0,101)
+num.append(nums)
+nums = randrange(0,101)
+num.append(nums)
+if num[0] % 2 == 0:
+    print(num[0])
+if num[1] % 2 == 0:
+    print(num[1])
+if num[2] % 2 == 0:
+    print(num[2])
+if num[3] % 2 == 0:
+    print(num[3])
+if num[4] % 2 == 0:
+    print(num[4])
+if num[5] % 2 == 0:
+    print(num[5])
+if num[6] % 2 == 0:
+    print(num[6])
+if num[7] % 2 == 0:
+    print(num[7])
+if num[8] % 2 == 0:
+    print(num[8])
+if num[9] % 2 == 0:
+    print(num[9])
+
+
+8.
+num = []
+nums = int(input("Digite um num"))
+num.append(nums)
+nums = int(input("Digite um num"))
+num.append(nums)
+nums = int(input("Digite um num"))
+num.append(nums)
+nums = int(input("Digite um num"))
+num.append(nums)
+nums = int(input("Digite um num"))
+num.append(nums)
+presente = int(input("Digite um número."))
+if num[0] == presente or num[1] == presente or num[2] == presente or num[3] == presente or num[4] == presente:
+    print("O número que você digitou está presente no array.")
+else:
+    print("O número que você digitou não está presente no array.")
+
+
+9.
+par = 0
+num = []
+from random import randrange
+nums = randrange(0,51)
+num.append(nums)
+nums = randrange(0,51)
+num.append(nums)
+nums = randrange(0,51)
+num.append(nums)
+nums = randrange(0,51)
+num.append(nums)
+nums = randrange(0,51)
+num.append(nums)
+nums = randrange(0,51)
+num.append(nums)
+nums = randrange(0,51)
+num.append(nums)
+nums = randrange(0,51)
+num.append(nums)
+nums = randrange(0,51)
+num.append(nums)
+nums = randrange(0,51)
+num.append(nums)
+if num[0] % 2 == 0:
+    par += 1
+if num[1] % 2 == 0:
+    par += 1
+if num[2] % 2 == 0:
+    par += 1
+if num[3] % 2 == 0:
+    par += 1
+if num[4] % 2 == 0:
+    par += 1
+if num[5] % 2 == 0:
+    par += 1
+if num[6] % 2 == 0:
+    par += 1
+if num[7] % 2 == 0:
+    par += 1
+if num[8] % 2 == 0:
+    par += 1
+if num[9] % 2 == 0:
+    par += 1
+print(num)
+print("Pares:", par)
+print("Ímpares:", 10 - par)
+
+
+10.
+num = []
+nums = int(input("Digite uma num"))
+num.append(nums)
+nums = int(input("Digite uma num"))
+num.append(nums)
+nums = int(input("Digite uma num"))
+num.append(nums)
+nums = int(input("Digite uma num"))
+num.append(nums)
+nums = int(input("Digite uma num"))
+num.append(nums)
+num1 = []
+nums1 = int(input("Digite uma num"))
+num1.append(nums1)
+nums1 = int(input("Digite uma num"))
+num1.append(nums1)
+nums1 = int(input("Digite uma num"))
+num1.append(nums1)
+nums1 = int(input("Digite uma num"))
+num1.append(nums1)
+nums1 = int(input("Digite uma num"))
+num1.append(nums1)
+mult = []
+mults = num[0] * num1[0]
+mult.append(mults)
+mults = num[1] * num1[1]
+mult.append(mults)
+mults = num[2] * num1[2]
+mult.append(mults)
+mults = num[3] * num1[3]
+mult.append(mults)
+mults = num[4] * num1[4]
+mult.append(mults)
+print(mult)
+
+
+11.
+num = []
+nums = int(input("Digite um número"))
+num.append(nums)
+nums = int(input("Digite um número"))
+num.append(nums)
+nums = int(input("Digite um número"))
+num.append(nums)
+nums = int(input("Digite um número"))
+num.append(nums)
+nums = int(input("Digite um número"))
+num.append(nums)
+if num[0] != num[1] and num[0] != num[2] and num[0] != num[3] and num[0] != num[4] and num[1] != num[2] and num[1] != num[3] and num[1] != num[4] and num[2] != num[3] and num[2] != num[4] and num[3] != num[4]:
+    print("Todos os elementos são distintos.")
+else:
+    print("Os elementos não são distintos.")
+
+
+12.
+num = []
+menu = int(input("O que deseja fazer?"))
+while menu == 1:
+    nums = int(input("Insira um número"))
+    if nums % 2 == 0:
+        num.append(nums)
+        menu = int(input("O que deseja fazer?"))
+    else:
+        print("Erro, números devem ser pares.")
+        menu = int(input("O que deseja fazer?"))
+while menu == 2:
+    print(num)
+    menu = int(input("O que deseja fazer?"))
+while menu == 3:
+    rem = int(input("Qual item deseja remover?"))
+    num.remove(rem)
+    menu = int(input("O que deseja fazer?"))
+while menu == 4:
+    num.remove
+    menu = int(input("O que deseja fazer?"))
+
+
+
+
+
+
+
+
+
+
+
+
+
