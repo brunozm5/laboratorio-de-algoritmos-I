@@ -15,6 +15,7 @@ nums = int(input("Digite uma num"))
 num.append(nums)
 nums = int(input("Digite uma num"))
 num.append(nums)
+
 for i in range(4, -1, -1):
     print(num[i])
 
@@ -31,6 +32,7 @@ nums = int(input("Digite uma num"))
 num.append(nums)
 nums = int(input("Digite uma num"))
 num.append(nums)
+
 print((num[0] + num[1] + num[2] + num[3] + num[4]) / 5)
 
 
@@ -83,6 +85,7 @@ nums1 = int(input("Digite uma num"))
 num1.append(nums1)
 nums1 = int(input("Digite uma num"))
 num1.append(nums1)
+
 soma = []
 somas = num[0] + num1[0]
 soma.append(somas)
@@ -107,6 +110,7 @@ nums = int(input("Digite um num"))
 num.append(nums)
 nums = int(input("Digite um num"))
 num.append(nums)
+
 const = int(input("Por qual valor serão multiplicados?"))
 print((num[0] * const), (num[1] * const), (num[2] * const), (num[3] * const), (num[4] * const), (num[5] * const))
 
@@ -168,6 +172,7 @@ nums = int(input("Digite um num"))
 num.append(nums)
 nums = int(input("Digite um num"))
 num.append(nums)
+
 presente = int(input("Digite um número."))
 if num[0] == presente or num[1] == presente or num[2] == presente or num[3] == presente or num[4] == presente:
     print("O número que você digitou está presente no array.")
@@ -273,6 +278,7 @@ nums = int(input("Digite um número"))
 num.append(nums)
 nums = int(input("Digite um número"))
 num.append(nums)
+
 if num[0] != num[1] and num[0] != num[2] and num[0] != num[3] and num[0] != num[4] and num[1] != num[2] and num[1] != num[3] and num[1] != num[4] and num[2] != num[3] and num[2] != num[4] and num[3] != num[4]:
     print("Todos os elementos são distintos.")
 else:
@@ -280,88 +286,51 @@ else:
 
 
 12.
-def menu():
-    print("\nMenu:")
-    print("1 - Inserir item")
-    print("2 - Listar itens")
-    print("3 - Retirar item")
-    print("4 - Retirar todos os itens")
-    print("5 - Contar quantos itens são maiores que um valor X")
-    print("6 - Verificar se um determinado número está presente no array")
-    print("7 - Encontrar o maior e o menor item do array")
-    print("8 - Sair")
+menu = int (input("O que deseja fazer?"))
 
-def inserir_item(array):
+while menu == 1:
     item = int(input("Digite um número par para inserir: "))
     if item % 2 != 0:
         print("Erro: apenas números pares são permitidos.")
     else:
         array.append(item)
-        print("Item inserido com sucesso.")
+    menu = int (input("O que deseja fazer?"))
 
-def listar_itens(array):
-    if array:
-        print("Itens no array:", array)
-    else:
-        print("O array está vazio.")
+while menu == 2:
+    print("Itens:", array)
+    menu = int (input("O que deseja fazer?"))
 
-def retirar_item(array):
+while menu == 3:
     item = int(input("Digite o número par que deseja retirar: "))
-    if item in array:
-        array.remove(item)
-        print("Item retirado com sucesso.")
-    else:
-        print("Erro: o item não está presente no array.")
+    array.remove(item)    
+    menu = int (input("O que deseja fazer?"))
 
-def retirar_todos_itens(array):
+while menu == 4:
     array.clear()
-    print("Todos os itens foram retirados.")
+    menu = int (input("O que deseja fazer?"))
 
-def contar_maiores_que(array):
+while menu == 5:
     x = int(input("Digite o valor X: "))
     count = sum(1 for item in array if item > x)
     print(f"Há {count} itens maiores que {x} no array.")
+    menu = int (input("O que deseja fazer?"))
 
-def verificar_presenca(array):
-    numero = int(input("Digite o número para verificar se está presente no array: "))
+while menu == 6:
+    numero = int(input("Digite o número para verificar se está presente: "))
     if numero in array:
         print(f"O número {numero} está presente no array.")
     else:
         print(f"O número {numero} não está presente no array.")
+    menu = int (input("O que deseja fazer?"))
 
-def encontrar_maior_menor(array):
-    if array:
-        maior = max(array)
-        menor = min(array)
-        print(f"O maior item do array é {maior} e o menor é {menor}.")
-    else:
-        print("O array está vazio.")
+while menu == 7:
+    maior = max(array)
+    menor = min(array)
+    print(f"O maior item do array é {maior} e o menor é {menor}.")
+    menu = int (input("O que deseja fazer?"))
 
-def main():
-    array = []
-    while True:
-        menu()
-        opcao = int(input("Escolha uma opção: "))
-        if opcao == 1:
-            inserir_item(array)
-        elif opcao == 2:
-            listar_itens(array)
-        elif opcao == 3:
-            retirar_item(array)
-        elif opcao == 4:
-            retirar_todos_itens(array)
-        elif opcao == 5:
-            contar_maiores_que(array)
-        elif opcao == 6:
-            verificar_presenca(array)
-        elif opcao == 7:
-            encontrar_maior_menor(array)
-        elif opcao == 8:
-            print("Saindo...")
-            break
-        else:
-            print("Opção inválida, tente novamente.")
-
+if menu == 8:
+    print("Adeus!")
 
 
 
