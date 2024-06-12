@@ -1,0 +1,45 @@
+def menu():
+    print("1 - Sacar")
+    print("2 - Depositar")
+    print("3 - Saldo")
+    print("4 - Sair")
+    opçao = int(input("Digite uma opção"))
+    return opçao
+
+def mostrar(saldo):
+    print("Saldo atual: ", saldo)
+
+def depositar(saldo):
+    valorParaDepositar = float(input("Digite o valor para depositar: "))
+    saldo += valorParaDepositar
+    mostrar(saldo)
+    return saldo
+
+def sacar(saldo):
+    valorParaSacar = float(input("Digite valor para sacar: "))
+    if valorParaSacar > saldo:
+        print("Saldo insuficiente")
+        querDepositar = input("Você deseja depositar um valor (SIM) / (NÃO)").upper()
+        if querDepositar == "SIM":
+            saldo = depositar(saldo)
+    else:
+        saldo -= valorParaSacar
+        mostrar(saldo)
+    return saldo
+
+def main():
+    opc = 0
+    saldo = 0
+
+    while (opc != 4):
+        opc = menu()
+        if opc == 1:
+            saldo = sacar(saldo)
+        elif opc == 2:
+            saldo = depositar(saldo)
+        elif opc == 3:
+            saldo = mostrar(saldo)
+    else:
+        print("Adeus!")
+
+main()
