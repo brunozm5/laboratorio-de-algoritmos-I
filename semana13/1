@@ -1,0 +1,12 @@
+def um():
+    print("OLÁ")
+
+def dois():
+    print("TCHAU")
+    
+
+açao = str(input("OLÁ OU TCHAU?"))
+if açao == "OLÁ":
+    açao = um()
+elif açao == "TCHAU":
+    açao = dois()
