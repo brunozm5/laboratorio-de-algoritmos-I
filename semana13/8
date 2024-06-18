@@ -1,0 +1,12 @@
+def preencher_array():
+    return list(range(1, 11))
+
+def mostrar_array_inverso(array):
+    array_inverso = array[::-1]
+    print("Array na ordem inversa:", array_inverso)
+
+def main():
+    array = preencher_array()
+    mostrar_array_inverso(array)
+
+main()
