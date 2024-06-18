@@ -1,0 +1,32 @@
+def converter_para_12_horas(hora24, minutos):
+    if hora24 == 0:
+        hora12 = 12
+        periodo = 'A.M.'
+    elif hora24 < 12:
+        hora12 = hora24
+        periodo = 'A.M.'
+    elif hora24 == 12:
+        hora12 = 12
+        periodo = 'P.M.'
+    else:
+        hora12 = hora24 - 12
+        periodo = 'P.M.'
+    
+    return hora12, minutos, periodo
+
+def formatar_saida(hora12, minutos, periodo):
+    return f"{hora12}:{minutos:02d} {periodo}"
+
+def main():
+    try:
+        hora24 = int(input("Digite a hora (0-23): "))
+        minutos = int(input("Digite os minutos (0-59): "))
+        
+        if (0 <= hora24 <= 23) and (0 <= minutos <= 59):
+            hora12, minutos, periodo = converter_para_12_horas(hora24, minutos)
+            resultado = formatar_saida(hora12, minutos, periodo)
+            print("Hora convertida:", resultado)
+        else:
+            print("Erro: Hora ou minutos fora dos intervalos permitidos.")
+
+main()
