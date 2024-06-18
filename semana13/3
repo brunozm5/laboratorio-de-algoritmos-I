@@ -1,0 +1,16 @@
+def calcular_valor_total(quantidade_laranjas):
+    if quantidade_laranjas <= 12:
+        preco_unitario = 0.40
+    else:
+        preco_unitario = 0.25
+    
+    valor_total = quantidade_laranjas * preco_unitario
+    return valor_total
+
+def main():
+    quantidade_laranjas = int(input("Digite o total de laranjas compradas: "))
+    valor_total = calcular_valor_total(quantidade_laranjas)
+    
+    print(f"O valor total da compra é: R${valor_total:.2f}")
+
+main()
