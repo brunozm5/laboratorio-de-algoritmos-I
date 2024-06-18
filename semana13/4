@@ -1,0 +1,25 @@
+def calcular_media(notas):
+    return sum(notas) / len(notas)
+
+def obter_situacao(media):
+    if media >= 7:
+        return "Aprovado"
+    elif media >= 4:
+        return "Recuperação"
+    else:
+        return "Reprovado"
+
+def apresentar_situacao(situacao):
+    print(f"A situação do aluno é: {situacao}")
+
+def main():
+    notas = []
+    for i in range(5):
+        nota = float(input(f"Digite a nota {i+1}: "))
+        notas.append(nota)
+    
+    media = calcular_media(notas)
+    situacao = obter_situacao(media)
+    apresentar_situacao(situacao)
+
+main()
