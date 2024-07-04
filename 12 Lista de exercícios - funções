@@ -24,3 +24,63 @@ def celsius_para_fahrenheit(celsius):
     return (celsius * 9/5) + 32
 
 5.
+def soma_numeros_naturais(numero):
+    if numero < 1:
+        return 0
+    return sum(range(1, numero + 1))
+
+6.
+def pesquisa_aceitacao(respostas):
+    total_sim = respostas.count('sim')
+    total_nao = respostas.count('não')
+    return total_sim, total_nao
+
+7.
+def pesquisa_jornal(preferencias):
+    total_A = preferencias.count('A')
+    total_B = preferencias.count('B')
+    total_C = preferencias.count('C')
+    total_pessoas = len(preferencias)
+    porcentagem_A = (total_A / total_pessoas) * 100
+    porcentagem_B = (total_B / total_pessoas) * 100
+    porcentagem_C = (total_C / total_pessoas) * 100
+    resultados = [
+        ('A', porcentagem_A),
+        ('B', porcentagem_B),
+        ('C', porcentagem_C)
+    ]
+    resultados.sort(key=lambda x: x[1])
+    return resultados
+
+8.
+def celsius_para_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+9.
+def encontrar_maior_e_menor(array):
+    if not array:
+        return None, None
+    maior = array[0]
+    menor = array[0]
+    for num in array:
+        if num > maior:
+            maior = num
+        if num < menor:
+            menor = num
+    return maior, menor
+
+10.
+def leitura_dados():
+    A = list(map(int, input().split()))
+    B = list(map(int, input().split()))
+    return A, B
+
+def soma_dos_dados(A, B):
+    C = []
+    for i in range(len(A)):
+        C.append(A[i] + B[i])
+    return C
+
+def apresenta_valor_C(C):
+    for valor in C:
+        print(valor)
